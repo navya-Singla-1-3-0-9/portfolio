@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-2.png" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Navya Singla</h1>
+
+          <p class="title">Software Engineering/ ML/ Research</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">singlanavya01@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/navya-singla-671b8b1b5" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+          <li class="social-item">
+            <a href="https://drive.google.com/file/d/1CaxYa9UBKJP4-Dw8XSLHLhjPHV0-cEkL/view?usp=sharing" class="social-link">
+              <p>Resume</p>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Driven by a passion for machine learning, artificial intelligence, and advancing technology, I’m a computer engineer with experience across applied research and development.
+            I am committed to advancing the fields of model interpretability, multimodal data integration, and explainable AI, striving to make complex systems more accessible, adaptable, and practical for real-world challenges.
+          </p>
+
+          <p>
+            My journey has taken me through impactful roles, including a full-time engineering position at Google and a SWE internship at Google Research. These experiences allowed me to apply my skills in a variety of projects, from developing retail-focused AI solutions to creating model interpretability tools, all aimed at enhancing AI’s ability to generalize and perform in diverse settings. 
+          </p>
+
+          <p>
+            Looking ahead, I’m eager to apply my skills toward developing adaptive AI systems capable of real-time interpretation across diverse data sources, particularly in healthcare. I’m passionate about creating AI-driven frameworks that empower clinicians with early, accurate diagnostics and insights. My goals include contributing to the field of AI with innovative, interpretable solutions that bridge technological and human needs.
+          </p>
+        </section>
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Delhi Technological University</h4>
+
+              <span>2019 — 2023</span>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Google</h4>
+
+              <span>July 2023 — Present</span>
+
+              <p class="timeline-text">
+                Software Engineer
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Google Research</h4>
+
+              <span>May 2022 - July 2022</span>
+
+              <p class="timeline-text">
+                Software Engineering Intern
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Flurno</h4>
+
+              <span>January 2022 - April 2022</span>
+
+              <p class="timeline-text">
+                Backend Web Development and SEO Lead
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Flipkart</h4>
+
+              <span>June 2021 - August 2021</span>
+
+              <p class="timeline-text">
+                Software Engineering Intern
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Microsoft</h4>
+
+              <span>June 2021 - July 2021</span>
+
+              <p class="timeline-text">
+                Microsoft Engage Intern
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Eduworks</h4>
+
+              <span>February 2021 - May 2021</span>
+
+              <p class="timeline-text">
+                Web Developer Intern
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a>XAINet-HRV: EXplainable AI Network for Heart Rate estimation fromfacial videos</a></h4>
+              <span>Ongoing/peer review</span>
+              <p class = "timeline-text">
+                Biomedical Signal Processing and Control
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a>Mathify: Evaluating Large Language Models on Mathematical Problem Solving Tasks</a></h4>
+              <span>December 2023</span>
+              <p class = "timeline-text">
+                NeurIPS 2023 Workshop on Generative AI for Education (GAIED)
+              </p>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a>Feature fusion and Multi-stream CNNs for Scale-Aware Multimodal Sign Language Recognition</a></h4>
+              <span>June 2023</span>
+              <p class = "timeline-text">
+                IEEE 2023 9th International Conference on Advanced Computing and Communication Systems (ICACCS)
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a>A comprehensive review of Sensor-based sign language recognition models</a></h4>
+              <span>May 2023</span>
+              <p class = "timeline-text">
+                Journal of Xi’an Shiyou University, Natural Science Edition, vol. 19, pp. 292–302, May 2023
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/navya-Singla-1-3-0-9/MicrosoftTeamsClone">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Teams_Hero_1920x720?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&hei=720&qlt=85&fmt=png-alpha&fit=constrain" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Microsoft Teams Clone</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/healix.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Healix</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/diabetes_detection">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://wisdomml.in/wp-content/uploads/2022/07/cover_photo.jpg" alt="diabetes_diagnosis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Diabetes Detection using Meta-heuristic algorithms</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/Crowd-counting">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://editor.analyticsvidhya.com/uploads/78315csrnet%201.JPG" alt="crowd_counting" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Context-Aware Crowd Counting</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/Multimodal-Sign-Language-Recognition">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://miro.medium.com/v2/resize:fit:1400/0*Iv-GIxB6KwJpZPaQ" alt="slr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mutimodal Sign Language Recognition</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/malaria-detection">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5UqReTD5QEZQEMZRIX1cqI9t8jPKvPSneYA&s" alt="slr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Malaria Detection from Blood Smears</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/AI-use-case-diagram-generator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240522154937/Use-Case-Diagram-Notations.webp" alt="slr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">NLP Use Case Diagram Generator</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/face-Recognition">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.envistaforensics.com/media/f4tiacr3/adobestock_628144110.jpeg?anchor=center&mode=crop&width=900&height=447&rnd=133456721744330000&format=webp&quality=80" alt="slr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Face Recognition</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/navya-Singla-1-3-0-9/Movie-Recommendation-System">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://blog.lancedb.com/content/images/2024/05/1_AatBvnpVpEPoQvZAMeqU-A.webp" alt="slr" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie Recommendation System</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+
+
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/navya-Singla-1-3-0-9/empower-lingo">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://pace.uno.edu/wp-content/uploads/2022/05/signlanguage-1024x512.jpg" alt="empower lingo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Empower Lingo</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/navya-Singla-1-3-0-9/notes-keeper">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjvCqQLpSeA6x23utp-C_MCb3rikjQT4NXA&s" alt="myNotes" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">School Planner</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/navya-Singla-1-3-0-9/Food-Ordering-Website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/food_ordering.jpeg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Food Ordering Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/navya-Singla-1-3-0-9/budget-tracker">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i.ytimg.com/vi/dPsRADcToKA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTKgFmzOQeU_xZ4OXkdYTDoKMk1A" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Budget Tracker</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
